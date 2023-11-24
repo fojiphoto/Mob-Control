@@ -59,7 +59,8 @@ public class PathFollow : MonoBehaviour
         }
         if(castle2.GetComponent<CastleManager>().castleHealth < -10)
         {
-              SceneManager.LoadScene(2);
+            //SceneManager.LoadScene(2);
+            GameManager.Instance.LevelCompleted();
         } 
     }
 
