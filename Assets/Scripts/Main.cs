@@ -21,7 +21,7 @@ public class Main : MonoBehaviour
     public void showBanner()
     {
         //nadeem
-       AdsManager.instance?.ShowBanner();
+        AdsManager.instance?.ShowBanner();
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class Main : MonoBehaviour
 
     public void OpenSetting()
     {
+        
         SettingPanel.SetActive(true);
         MainMenu.SetActive(false);
         AudioManager.Instance.PlaySFX("click");

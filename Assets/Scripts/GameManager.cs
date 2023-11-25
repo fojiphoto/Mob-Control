@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +22,10 @@ public class GameManager : MonoBehaviour
     {
         scene= SceneManager.GetActiveScene().buildIndex;
        AudioManager.Instance.PlayMusic("BG");
-        
+        //GameObject Water = Resources.Load("Water").GameObject;
+        Instantiate(Resources.Load("Water"));
+        GameObject destroyGameobject= GameObject.Find("Plane (1)");
+        Destroy(destroyGameobject);
     }
 
     // Update is called once per frame
@@ -61,7 +65,7 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(scene);
-         AdsManager.instance.ShowInterstitialWithoutConditions();
+        AdsManager.instance.ShowInterstitialWithoutConditions();
         //nadeem
         AudioManager.Instance.PlaySFX("click");
     }
