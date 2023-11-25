@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using System.Net;
-using Firebase.Analytics;
+//using Firebase.Analytics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,8 +20,8 @@ public class AdsManager : MonoBehaviour
     private string InterstitialAdUnitIdGeneric = "dec01a07a693b8a3";
     private string RewardedAdUnitIdGeneric = "097f939ae9bd396d";
     private string BannerAdUnitId = "5a3434edd45da6d5";
-    private string AppOpenAdUnitId = "a991fd1e3ce7f602";
-    private string RecID = "27f3a52e1a2f2f36";
+    private string AppOpenAdUnitId = "31a27529bde7c935";
+    private string RecID = "d52d4b59a0c033ce";
 
     
 
@@ -255,7 +255,7 @@ public class AdsManager : MonoBehaviour
 
         try
         {
-            FirebaseInitialize.instance.LogEvent1("MREC_Loaded");
+           // FirebaseInitialize.instance.LogEvent1("MREC_Loaded");
         }
         catch (System.Exception ex)
         {
@@ -275,7 +275,7 @@ public class AdsManager : MonoBehaviour
 
         try
         {
-            FirebaseInitialize.instance.LogEvent1("MREC_Clicked");
+           // FirebaseInitialize.instance.LogEvent1("MREC_Clicked");
         }
         catch (System.Exception ex)
         {
@@ -287,16 +287,16 @@ public class AdsManager : MonoBehaviour
     {
         Debug.Log("OnAdRevenuePaidEvent");
         double revenue = impressionData.Revenue;
-        var impressionParameters = new[]
-        {
-    new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
-    new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
-    new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
-    new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
-    new Firebase.Analytics.Parameter("value", revenue),
-    new Firebase.Analytics.Parameter("currency","USD"), // All AppLovin revenue is sent in USD
-  };
-        Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression_max", impressionParameters);
+       // var impressionParameters = new[]
+       // {
+        //new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
+       // new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
+       // new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
+       // new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
+      //  new Firebase.Analytics.Parameter("value", revenue),
+      //  new Firebase.Analytics.Parameter("currency","USD"), // All AppLovin revenue is sent in USD
+ // };
+       // Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression_max", impressionParameters);
         //// MRec ad revenue paid. Use this callback to track user revenue.
         //Debug.Log("MRec ad revenue paid");
 
@@ -350,17 +350,17 @@ public class AdsManager : MonoBehaviour
 
     private void OnAdRevenuePaidEvent(string adUnitId, MaxSdkBase.AdInfo impressionData)
     {
-        Debug.Log("OnAdRevenuePaidEvent");
-        double revenue = impressionData.Revenue;
-        var impressionParameters = new[] {
-            new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
-            new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
-            new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
-            new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
-            new Firebase.Analytics.Parameter("value", revenue),
-            new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
-        };
-        Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression_max", impressionParameters);
+        //Debug.Log("OnAdRevenuePaidEvent");
+        //double revenue = impressionData.Revenue;
+        //var impressionParameters = new[] {
+        //    new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
+        //    new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
+        //    new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
+        //    new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
+        //    new Firebase.Analytics.Parameter("value", revenue),
+        //    new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
+        //};
+        //Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression_max", impressionParameters);
     }
 
     #endregion
@@ -483,7 +483,7 @@ public class AdsManager : MonoBehaviour
     {
         //if (AnalyticEvents.Instance)
         {
-            FirebaseAnalytics.LogEvent("app_open_shown_event");
+           // FirebaseAnalytics.LogEvent("app_open_shown_event");
         }
 
         isAppOpenShowing = true;
@@ -654,20 +654,20 @@ public class AdsManager : MonoBehaviour
         AudioListener.pause = true;
         lastTime = Time.time;
         Debug.Log("_Interstitial Ads Is Displayed: " + adUnitId);
-        FirebaseAnalytics.LogEvent("interstitial_shown_event");
+       // FirebaseAnalytics.LogEvent("interstitial_shown_event");
         // //events
         ++Interstitial_count;
 
         switch (Interstitial_count)
         {
             case 1:
-                FirebaseAnalytics.LogEvent("first_interstitial");
+               // FirebaseAnalytics.LogEvent("first_interstitial");
                 break;
             case 5:
-                FirebaseAnalytics.LogEvent("fifth_interstitial");
+               // FirebaseAnalytics.LogEvent("fifth_interstitial");
                 break;
             case 10:
-                FirebaseAnalytics.LogEvent("tenth_interstitial");
+               // FirebaseAnalytics.LogEvent("tenth_interstitial");
                 break;
         }
     }
@@ -773,7 +773,7 @@ public class AdsManager : MonoBehaviour
         Debug.Log("Rewarded ad received reward " + " " + adUnitId);
         _isAdLoaded = false;
       //  CheckButtonsStatus();
-        FirebaseAnalytics.LogEvent("ad_rewarded_shown");
+       // FirebaseAnalytics.LogEvent("ad_rewarded_shown");
         //Here give reward
 
         rVShownTime = Time.time;

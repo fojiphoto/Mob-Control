@@ -20,7 +20,8 @@ public class Main : MonoBehaviour
     }
     public void showBanner()
     {
-        AdsManager.instance?.ShowBanner();
+        //nadeem
+       AdsManager.instance?.ShowBanner();
     }
 
     // Update is called once per frame

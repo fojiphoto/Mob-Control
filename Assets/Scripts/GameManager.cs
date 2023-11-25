@@ -61,7 +61,8 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(scene);
-        AdsManager.instance.ShowInterstitialWithoutConditions();
+         AdsManager.instance.ShowInterstitialWithoutConditions();
+        //nadeem
         AudioManager.Instance.PlaySFX("click");
     }
     public void Next()
@@ -78,12 +79,14 @@ public class GameManager : MonoBehaviour
         
         AudioManager.Instance.PlaySFX("click");
         AdsManager.instance.ShowInterstitialWithoutConditions();
+       //nadeem
     }
     public void Home()
     {
         SceneManager.LoadScene(0);
         AudioManager.Instance.PlaySFX("click");
-        AdsManager.instance.ShowInterstitialWithoutConditions();
+         AdsManager.instance.ShowInterstitialWithoutConditions();
+        //nadeem
 
     }
 }
