@@ -6,11 +6,14 @@ public class FCMrec : MonoBehaviour
 {
     private void OnEnable()
     {
-        AdsManager.instance?.ShowMRec();
+        //abdulRehman
+        //AdsManager.instance?.ShowMRec();
+        CASAds.instance?.ShowMrecBanner(CAS.AdPosition.TopCenter);
     }
 
     private void OnDisable()
-    {
-        AdsManager.instance?.HideMRec();
+    {   //abdulRehman
+        //AdsManager.instance?.HideMRec();
+        CASAds.instance?.HideMrecBanner();
     }
 }

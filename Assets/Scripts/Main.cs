@@ -21,7 +21,9 @@ public class Main : MonoBehaviour
     public void showBanner()
     {
         //nadeem
-        AdsManager.instance?.ShowBanner();
+        //abdulRehman
+        //AdsManager.instance?.ShowBanner();
+        CASAds.instance.ShowBanner(CAS.AdPosition.BottomCenter);
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class Main : MonoBehaviour
     }
     public void LoadGamePlay()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         AudioManager.Instance.PlaySFX("click");
     }
 }

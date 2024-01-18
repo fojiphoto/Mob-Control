@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public GameObject LevelComplete,LevelFail,SettinPanel;
+    public GameObject LevelComplete, LevelFail, SettinPanel, DefeatCanvas;
     int scene;
     private void Awake()
     {
@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
         LevelFail.SetActive(true);
         AudioManager.Instance.PlaySFX("lose");
         AudioManager.Instance.musicsource.Stop();
+        DefeatCanvas.SetActive(false);
+
     }
     public void SettingPanelOpen()
     {
@@ -65,15 +67,17 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(scene);
-        AdsManager.instance.ShowInterstitialWithoutConditions();
+        //abdulRehman
+        //AdsManager.instance.ShowInterstitialWithoutConditions();
+        CASAds.instance.ShowInterstitial();
         //nadeem
         AudioManager.Instance.PlaySFX("click");
     }
     public void Next()
     {
-        if (scene>=10)
+        if (scene>=11)
         {
-            int randomScene = Random.Range(0, 10);
+            int randomScene = Random.Range(1, 11);
             SceneManager.LoadScene(randomScene);
         }
         else
@@ -82,14 +86,18 @@ public class GameManager : MonoBehaviour
         }
         
         AudioManager.Instance.PlaySFX("click");
-        AdsManager.instance.ShowInterstitialWithoutConditions();
+        //abdulRehman
+        //AdsManager.instance.ShowInterstitialWithoutConditions();
+        CASAds.instance.ShowInterstitial();
        //nadeem
     }
     public void Home()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         AudioManager.Instance.PlaySFX("click");
-         AdsManager.instance.ShowInterstitialWithoutConditions();
+        //abdulRehman
+        //AdsManager.instance.ShowInterstitialWithoutConditions();
+        CASAds.instance.ShowInterstitial();
         //nadeem
 
     }
