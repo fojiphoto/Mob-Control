@@ -15,7 +15,7 @@ public class Main : MonoBehaviour
     {
         MainMenu.SetActive(true);
         SettingPanel.SetActive(false);
-        Invoke(nameof(showBanner), 4.5f);
+        Invoke(nameof(showBanner), 0.1f);
        
     }
     public void showBanner()
@@ -45,9 +45,23 @@ public class Main : MonoBehaviour
         MainMenu.SetActive(true);
         AudioManager.Instance.PlaySFX("click");
     }
+    public void PrivacyPolicy()
+    {
+         string privacyurl = "https://orbitgamesglobal-privacy-policy.blogspot.com/";
+         Application.OpenURL(privacyurl);
+    }
+    public void RevokeConcent()
+    {
+        CASAds.instance?.HideBanner();
+        CASAds.instance?.HideMrecBanner();
+        PlayerPrefs.SetInt("GDPR", 0);
+        Application.LoadLevel("GDPR");
+    }
     public void LoadGamePlay()
     {
-        SceneManager.LoadScene(2);
+        
+        SceneManager.LoadScene(3);
         AudioManager.Instance.PlaySFX("click");
     }
+   
 }

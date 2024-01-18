@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if (scene>=11)
         {
-            int randomScene = Random.Range(1, 11);
+            int randomScene = Random.Range(2, 12);
             SceneManager.LoadScene(randomScene);
         }
         else
@@ -91,9 +91,16 @@ public class GameManager : MonoBehaviour
         CASAds.instance.ShowInterstitial();
        //nadeem
     }
+    public void RevokeConcent()
+    {
+        CASAds.instance?.HideBanner();
+        CASAds.instance?.HideMrecBanner();
+        PlayerPrefs.SetInt("GDPR", 0);
+        Application.LoadLevel("GDPR");
+    }
     public void Home()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         AudioManager.Instance.PlaySFX("click");
         //abdulRehman
         //AdsManager.instance.ShowInterstitialWithoutConditions();

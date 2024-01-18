@@ -308,14 +308,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44ad9d7abbff8e4e9b2d3bad888f15d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bluePrefab: {fileID: 2259161298844523036, guid: 1621147ccb7fe1d438d7ff677359cdf1, type: 3}
-  BigPlayerPrefab: {fileID: 7523673158872808841, guid: 466f2d380eaf42142a6b5fc6c9cdb08c, type: 3}
+  bluePrefab: {fileID: 8361744453504985427, guid: f083601a2797ad8489e4926d63c52f4d, type: 3}
+  BigPlayerPrefab: {fileID: 324809125625335915, guid: 342e03c07976462478f32dcdd4ced363, type: 3}
   fireRate: 0.4
   speed: 25
   rb: {fileID: 0}
   bigPlayerSlider: {fileID: 1110065238781295800}
   muzzle: {fileID: 1110065239082280942}
   animator: {fileID: 1110065240496244464}
+  sliderFullImage: {fileID: 0}
+  sliderLoadImage: {fileID: 0}
+  Level1: {fileID: 0}
+  releaseTxt: {fileID: 0}
   shotSpeed: 20
 --- !u!54 &1110065239985234247
 Rigidbody:
@@ -593,7 +597,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1110065240496244464
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -610,8 +614,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &643178058575756817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 01e651842debab9449af4e37dc144197, type: 3}
