@@ -50,6 +50,16 @@ public class Main : MonoBehaviour
          string privacyurl = "https://orbitgamesglobal-privacy-policy.blogspot.com/";
          Application.OpenURL(privacyurl);
     }
+    public void MoreGames()
+    {
+        string moreGamesurl = "https://play.google.com/store/apps/developer?id=Orbit+Games+Global";
+        Application.OpenURL(moreGamesurl);
+    }
+    public void RateUs()
+    {
+        string Rateurl = "https://play.google.com/store/apps/details?id="+Application.identifier;
+        Application.OpenURL(Rateurl);
+    }
     public void RevokeConcent()
     {
         CASAds.instance?.HideBanner();
