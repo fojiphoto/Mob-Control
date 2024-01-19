@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testAdMode: 0
   managerIds:
-  - com.ogg.bobandcont
+  - com.fsa.bob
   allowedAdFlags: 7
   audienceTagged: 0
   bannerSize: 0

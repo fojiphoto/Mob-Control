@@ -70,7 +70,7 @@ public class Main : MonoBehaviour
     public void LoadGamePlay()
     {
         
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
         AudioManager.Instance.PlaySFX("click");
     }
    

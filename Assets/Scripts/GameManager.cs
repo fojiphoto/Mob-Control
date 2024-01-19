@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
     }
     public void Home()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
         AudioManager.Instance.PlaySFX("click");
         //abdulRehman
         //AdsManager.instance.ShowInterstitialWithoutConditions();
