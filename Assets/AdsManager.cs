@@ -117,7 +117,7 @@ public class AdsManager : MonoBehaviour
         {
             Debug.Log("MAX SDK Initialized");
             _isSdkInitialized = true; 
-            //MaxSdk.ShowMediationDebugger();
+            MaxSdk.ShowMediationDebugger();
         };
         
         MaxSdk.SetSdkKey(MaxSdkKey);
@@ -162,7 +162,7 @@ public class AdsManager : MonoBehaviour
         }
         
         MaxSdk.SetHasUserConsent(true);
-        MaxSdk.SetIsAgeRestrictedUser(false);
+       // MaxSdk.SetIsAgeRestrictedUser(false);
         MaxSdk.SetDoNotSell(false);
         
         InitializeInterstitialAds();
@@ -407,8 +407,8 @@ public class AdsManager : MonoBehaviour
 
     public void ShowAppOpenAdIfReady()
     {
-        //if (isAppOpenShowing || _isAdRemoved || isAdShowing)
-        //    return;
+        if (isAppOpenShowing || _isAdRemoved || isAdShowing)
+            return;
 
         //Debug.Log("ShowingAppOpen");
         //if (MaxSdk.IsAppOpenAdReady(AppOpenAdUnitId))
@@ -421,13 +421,13 @@ public class AdsManager : MonoBehaviour
         //}
     }
 
-    private void OnApplicationPause(bool pauseStatus)
-    {
-        if (!pauseStatus)
-        {
-            ShowAppOpenAdIfReady();
-        }
-    }
+    //private void OnApplicationPause(bool pauseStatus)
+    //{
+    //    if (!pauseStatus)
+    //    {
+    //        ShowAppOpenAdIfReady();
+    //    }
+    //}
 
     public bool isApOpenLoaded;
     private void OnApOpenLoadedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)

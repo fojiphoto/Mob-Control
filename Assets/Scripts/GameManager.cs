@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameAnalyticsSDK;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Level Start");
         scene= SceneManager.GetActiveScene().buildIndex;
        AudioManager.Instance.PlayMusic("BG");
         //GameObject Water = Resources.Load("Water").GameObject;
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour
         LevelComplete.SetActive(true);
         AudioManager.Instance.PlaySFX("win");
         AudioManager.Instance.musicsource.Stop();
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Level Complete");
     }
 
     public void LevelFailed()
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour
         LevelFail.SetActive(true);
         AudioManager.Instance.PlaySFX("lose");
         AudioManager.Instance.musicsource.Stop();
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "Level Fail");
     }
     public void SettingPanelOpen()
     {
