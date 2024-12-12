@@ -17,11 +17,11 @@ public class AdsManager : MonoBehaviour
     private const string MaxSdkKey = "TecxGz9HeSi_iQ5CGuTRWRFTDHtMM_TKk19s1icUkcuQLyS1FNVZ8Kp_McP2XmsoOIqrW7KHyl1Q5itk7RJVnT";//FS
 
 
-    [SerializeField] private string InterstitialAdUnitIdGeneric = "dec01a07a693b8a3";
-    [SerializeField] private string RewardedAdUnitIdGeneric = "097f939ae9bd396d";
-    [SerializeField] private string BannerAdUnitId = "5a3434edd45da6d5";
-    [SerializeField] private string AppOpenAdUnitId = "31a27529bde7c935";
-    [SerializeField] private string RecID = "d52d4b59a0c033ce";
+    [SerializeField] private string InterstitialAdUnitIdGeneric = "aaf5c5a4fd23e08b";
+    [SerializeField] private string RewardedAdUnitIdGeneric = "328720f69a6995f4";
+    [SerializeField] private string BannerAdUnitId = "c014c3d5937e6716";
+    [SerializeField] private string AppOpenAdUnitId = "";
+    [SerializeField] private string RecID = "e46c3e3416b7d310";
 
     
 
@@ -168,7 +168,7 @@ public class AdsManager : MonoBehaviour
         InitializeInterstitialAds();
         InitializeRewardedAds();
         InitializeMRecAds();
-        InitializeAppOpenAds();
+        //InitializeAppOpenAds();
         InitializeBannerAds();
         InitializePaidEvents();
         LoadApOpen();
@@ -399,26 +399,26 @@ public class AdsManager : MonoBehaviour
 
     void LoadApOpen()
     {
-        if (!MaxSdk.IsAppOpenAdReady(AppOpenAdUnitId))
-            MaxSdk.LoadAppOpenAd(AppOpenAdUnitId);
+        //if (!MaxSdk.IsAppOpenAdReady(AppOpenAdUnitId))
+        //    MaxSdk.LoadAppOpenAd(AppOpenAdUnitId);
     }
 
 
 
     public void ShowAppOpenAdIfReady()
     {
-        if (isAppOpenShowing || _isAdRemoved || isAdShowing)
-            return;
+        //if (isAppOpenShowing || _isAdRemoved || isAdShowing)
+        //    return;
 
-        Debug.Log("ShowingAppOpen");
-        if (MaxSdk.IsAppOpenAdReady(AppOpenAdUnitId))
-        {
-            MaxSdk.ShowAppOpenAd(AppOpenAdUnitId);
-        }
-        else
-        {
-            MaxSdk.LoadAppOpenAd(AppOpenAdUnitId);
-        }
+        //Debug.Log("ShowingAppOpen");
+        //if (MaxSdk.IsAppOpenAdReady(AppOpenAdUnitId))
+        //{
+        //    MaxSdk.ShowAppOpenAd(AppOpenAdUnitId);
+        //}
+        //else
+        //{
+        //    MaxSdk.LoadAppOpenAd(AppOpenAdUnitId);
+        //}
     }
 
     private void OnApplicationPause(bool pauseStatus)

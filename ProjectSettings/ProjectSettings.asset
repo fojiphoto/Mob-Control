@@ -247,7 +247,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: G:/KeyStores/AmazonKeyStore/Amazon.keystore
+  AndroidKeystoreName: F:/KeyStores/AmazonKeyStore/Amazon.keystore
   AndroidKeyaliasName: factorialstudio
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

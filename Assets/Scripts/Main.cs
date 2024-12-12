@@ -30,6 +30,11 @@ public class Main : MonoBehaviour
         
     }
 
+    public void Privacy()
+    {
+        Application.OpenURL("https://cbgprivacypolicy.blogspot.com/2023/02/privacy-policy.html");
+    }
+
     public void OpenSetting()
     {
         
