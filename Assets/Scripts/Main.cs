@@ -32,7 +32,7 @@ public class Main : MonoBehaviour
 
     public void Privacy()
     {
-        Application.OpenURL("https://orbitgamesglobal-privacy-policy.blogspot.com/");
+        Application.OpenURL("https://privacy-policy-abi-blaze.blogspot.com/2024/12/privacy-policy.html");
     }
 
     public void OpenSetting()

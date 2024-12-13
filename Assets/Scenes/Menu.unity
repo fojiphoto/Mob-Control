@@ -384,7 +384,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105891959}
-  - component: {fileID: 105891958}
   m_Layer: 0
   m_Name: AdManager
   m_TagString: Untagged
@@ -392,32 +391,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &105891958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105891957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507fe07a111d4734a851bfe529f14ca0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InterstitialAdUnitIdGeneric: 1a5269b874a63343
-  RewardedAdUnitIdGeneric: 11f8ebd48fbb37d1
-  BannerAdUnitId: 057450dbb767bb8e
-  AppOpenAdUnitId: 
-  RecID: 3f73e11caa6c0401
-  isBannerShowing: 0
-  _isAdLoaded: 0
-  rVShownTime: 0
-  appOpenTimeDelay: 30
-  isAppOpenShowing: 0
-  isApOpenLoaded: 0
-  interstitialPlacement: level_up
-  isInterstitialLoaded: 0
-  isAdShowing: 0
 --- !u!4 &105891959
 Transform:
   m_ObjectHideFlags: 0

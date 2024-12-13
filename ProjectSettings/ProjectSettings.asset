@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: OrbitGames
-  productName: Mob Control Game
+  companyName: ABI Blaze Core
+  productName: Mob Army 3d
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.oga.bob.mob.control
+    Android: com.bia.mob.control
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -247,8 +247,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: F:/KeyStores/AmazonKeyStore/OG_Amazon.keystore
-  AndroidKeyaliasName: orbitgamesamazon
+  AndroidKeystoreName: F:/KeyStores/AmazonKeyStore/ABI.keystore
+  AndroidKeyaliasName: abi blaze core
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
@@ -271,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 8b434eebd57445c489cce29671e148b8, type: 3}
+      m_Icon: {fileID: 2800000, guid: edb1de18b96ac4c4883bb03631ea8f1c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
