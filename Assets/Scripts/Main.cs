@@ -32,7 +32,7 @@ public class Main : MonoBehaviour
 
     public void Privacy()
     {
-        Application.OpenURL("https://factorialstudio.blogspot.com/2023/01/privacy-policy.html");
+        Application.OpenURL("https://orbitgamesglobal-privacy-policy.blogspot.com/");
     }
 
     public void OpenSetting()
