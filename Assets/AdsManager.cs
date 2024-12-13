@@ -117,7 +117,7 @@ public class AdsManager : MonoBehaviour
         {
             Debug.Log("MAX SDK Initialized");
             _isSdkInitialized = true; 
-            MaxSdk.ShowMediationDebugger();
+            //MaxSdk.ShowMediationDebugger();
         };
         
         MaxSdk.SetSdkKey(MaxSdkKey);
