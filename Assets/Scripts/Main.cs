@@ -32,7 +32,7 @@ public class Main : MonoBehaviour
 
     public void Privacy()
     {
-        Application.OpenURL("https://cbgprivacypolicy.blogspot.com/2023/02/privacy-policy.html");
+        Application.OpenURL("https://factorialstudio.blogspot.com/2023/01/privacy-policy.html");
     }
 
     public void OpenSetting()
