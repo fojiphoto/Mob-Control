@@ -8322,8 +8322,8 @@ RectTransform:
   m_Father: {fileID: 554105205}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2404074, y: 0.5295359}
-  m_AnchorMax: {x: 0.7595926, y: 0.7320675}
+  m_AnchorMin: {x: 0.2736353, y: 0.36708808}
+  m_AnchorMax: {x: 0.6661393, y: 0.6497885}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13286,8 +13286,8 @@ RectTransform:
   m_Father: {fileID: 245009923}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2404074, y: 0.5295355}
-  m_AnchorMax: {x: 0.7595926, y: 0.7320671}
+  m_AnchorMin: {x: 0.21029466, y: 0.33966205}
+  m_AnchorMax: {x: 0.72947985, y: 0.6772148}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25057,8 +25057,8 @@ RectTransform:
   m_Father: {fileID: 1369404196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2991675, y: 0.46330276}
-  m_AnchorMax: {x: 0.7008325, y: 0.76605505}
+  m_AnchorMin: {x: 0.32552183, y: 0.3110185}
+  m_AnchorMax: {x: 0.66812795, y: 0.7069576}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25084,7 +25084,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 7f896c90bd3e3994fa9f2fa84897eec8, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -26634,8 +26634,8 @@ RectTransform:
   m_Father: {fileID: 248416117}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: -0.08884804, y: 0.8360092}
-  m_AnchorMax: {x: 1.088848, y: 1.0860091}
+  m_AnchorMin: {x: 0.0882353, y: 0.8572248}
+  m_AnchorMax: {x: 0.9252451, y: 1.0831423}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -26661,7 +26661,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 4ed083b3d3c4b6d40b709fd42b4a3926, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
