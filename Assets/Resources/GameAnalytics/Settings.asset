@@ -30,7 +30,7 @@ MonoBehaviour:
   secretKey:
   - ae0a6d0d5d408e8bca891d4e7142814f0870f7a9
   Build:
-  - 0.1
+  - 1.0
   SelectedPlatformOrganization:
   - 
   SelectedPlatformStudio:
@@ -81,7 +81,7 @@ MonoBehaviour:
   iosIcon: {fileID: 0}
   macIcon: {fileID: 0}
   windowsPhoneIcon: {fileID: 0}
-  UsePlayerSettingsBuildNumber: 0
+  UsePlayerSettingsBuildNumber: 1
   SubmitErrors: 1
   NativeErrorReporting: 0
   MaxErrorCount: 10
